@@ -37,7 +37,7 @@ public interface LiveAuthListener {
      * @param session The {@link LiveConnectSession} from the {@link LiveAuthClient}.
      * @param userState An arbitrary object that is used to determine the caller of the method.
      */
-    public void onAuthComplete(LiveStatus status, LiveConnectSession session, Object userState);
+    void onAuthComplete(LiveStatus status, LiveConnectSession session, Object userState);
 
     /**
      * Invoked when the method call fails.
@@ -45,5 +45,5 @@ public interface LiveAuthListener {
      * @param exception The {@link LiveAuthException} error.
      * @param userState An arbitrary object that is used to determine the caller of the method.
      */
-    public void onAuthError(LiveAuthException exception, Object userState);
+    void onAuthError(LiveAuthException exception, Object userState);
 }

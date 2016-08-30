@@ -48,7 +48,7 @@ abstract class EntityEnclosingApiRequest<ResponseType> extends ApiRequest<Respon
          * @param totalBytes of the upload request
          * @param numBytesWritten during the upload request
          */
-        public void onProgress(long totalBytes, long numBytesWritten);
+        void onProgress(long totalBytes, long numBytesWritten);
     }
 
     /**

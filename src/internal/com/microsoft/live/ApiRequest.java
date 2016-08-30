@@ -51,7 +51,7 @@ import android.text.TextUtils;
 abstract class ApiRequest<ResponseType> {
 
     public interface Observer {
-        public void onComplete(HttpResponse response);
+        void onComplete(HttpResponse response);
     }
 
     public enum Redirects {

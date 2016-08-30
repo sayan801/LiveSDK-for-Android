@@ -71,7 +71,7 @@ public class UploadRequestTest extends InstrumentationTestCase {
             
             @Override
             public HttpResponse execute(HttpUriRequest request)
-                    throws IOException, ClientProtocolException {
+                    throws IOException {
                 
                 if (uploadLocationRequest) {
                     uploadLocationRequest = false;
@@ -89,37 +89,37 @@ public class UploadRequestTest extends InstrumentationTestCase {
             }
             
             @Override
-            public HttpResponse execute(HttpUriRequest request, HttpContext context) throws IOException, ClientProtocolException {
+            public HttpResponse execute(HttpUriRequest request, HttpContext context) throws IOException {
                 throw new UnsupportedOperationException();
             }
 
             @Override
-            public HttpResponse execute(HttpHost target, HttpRequest request) throws IOException, ClientProtocolException {
+            public HttpResponse execute(HttpHost target, HttpRequest request) throws IOException {
                 throw new UnsupportedOperationException();
             }
 
             @Override
-            public <T> T execute(HttpUriRequest arg0, ResponseHandler<? extends T> arg1) throws IOException, ClientProtocolException {
+            public <T> T execute(HttpUriRequest arg0, ResponseHandler<? extends T> arg1) throws IOException {
                 throw new UnsupportedOperationException();
             } 
             
             @Override
-            public HttpResponse execute(HttpHost target, HttpRequest request, HttpContext context) throws IOException, ClientProtocolException {
+            public HttpResponse execute(HttpHost target, HttpRequest request, HttpContext context) throws IOException {
                 throw new UnsupportedOperationException();
             }
 
             @Override
-            public <T> T execute(HttpUriRequest arg0, ResponseHandler<? extends T> arg1, HttpContext arg2) throws IOException, ClientProtocolException {
+            public <T> T execute(HttpUriRequest arg0, ResponseHandler<? extends T> arg1, HttpContext arg2) throws IOException {
                 throw new UnsupportedOperationException();
             }
 
             @Override
-            public <T> T execute(HttpHost arg0, HttpRequest arg1, ResponseHandler<? extends T> arg2) throws IOException, ClientProtocolException {
+            public <T> T execute(HttpHost arg0, HttpRequest arg1, ResponseHandler<? extends T> arg2) throws IOException {
                 throw new UnsupportedOperationException();
             }
 
             @Override
-            public <T> T execute(HttpHost arg0, HttpRequest arg1, ResponseHandler<? extends T> arg2, HttpContext arg3) throws IOException, ClientProtocolException {
+            public <T> T execute(HttpHost arg0, HttpRequest arg1, ResponseHandler<? extends T> arg2, HttpContext arg3) throws IOException {
                 throw new UnsupportedOperationException();
             } 
             

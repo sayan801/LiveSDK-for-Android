@@ -32,7 +32,7 @@ interface ObservableOAuthRequest {
      *
      * @param observer to add
      */
-    public void addObserver(OAuthRequestObserver observer);
+    void addObserver(OAuthRequestObserver observer);
 
     /**
      * Removes an observer that is observing the OAuth request
@@ -40,5 +40,5 @@ interface ObservableOAuthRequest {
      * @param observer to remove
      * @return true if the observer was removed.
      */
-    public boolean removeObserver(OAuthRequestObserver observer);
+    boolean removeObserver(OAuthRequestObserver observer);
 }

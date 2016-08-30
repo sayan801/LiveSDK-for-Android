@@ -31,12 +31,12 @@ interface OAuthRequestObserver {
      *
      * @param exception
      */
-    public void onException(LiveAuthException exception);
+    void onException(LiveAuthException exception);
 
     /**
      * Callback used on a response.
      *
      * @param response
      */
-    public void onResponse(OAuthResponse response);
+    void onResponse(OAuthResponse response);
 }

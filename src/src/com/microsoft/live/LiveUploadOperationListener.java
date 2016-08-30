@@ -32,14 +32,14 @@ public interface LiveUploadOperationListener {
      * Called when the associated upload operation call completes.
      * @param operation The {@link LiveOperation} object.
      */
-    public void onUploadCompleted(LiveOperation operation);
+    void onUploadCompleted(LiveOperation operation);
 
     /**
      * Called when the associated upload operation call fails.
      * @param exception The error returned by the REST operation call.
      * @param operation The {@link LiveOperation} object.
      */
-    public void onUploadFailed(LiveOperationException exception, LiveOperation operation);
+    void onUploadFailed(LiveOperationException exception, LiveOperation operation);
 
     /**
      * Called arbitrarily during the progress of the upload request.
@@ -47,5 +47,5 @@ public interface LiveUploadOperationListener {
      * @param bytesRemaining The bytes remaining to download.
      * @param operation The {@link LiveOperation} object.
      */
-    public void onUploadProgress(int totalBytes, int bytesRemaining, LiveOperation operation);
+    void onUploadProgress(int totalBytes, int bytesRemaining, LiveOperation operation);
 }

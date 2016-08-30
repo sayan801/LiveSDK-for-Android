@@ -85,19 +85,19 @@ final class OAuth {
          * The authorization grant type is not supported by the
          * authorization server.
          */
-        UNSUPPORTED_GRANT_TYPE;
+        UNSUPPORTED_GRANT_TYPE
     }
 
     public enum GrantType {
         AUTHORIZATION_CODE,
         CLIENT_CREDENTIALS,
         PASSWORD,
-        REFRESH_TOKEN;
+        REFRESH_TOKEN
     }
 
     public enum ResponseType {
         CODE,
-        TOKEN;
+        TOKEN
     }
 
     public enum TokenType {

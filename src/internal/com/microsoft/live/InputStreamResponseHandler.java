@@ -40,8 +40,8 @@ enum InputStreamResponseHandler implements ResponseHandler<InputStream> {
     INSTANCE;
 
     @Override
-    public InputStream handleResponse(HttpResponse response) throws ClientProtocolException,
-                                                                    IOException {
+    public InputStream handleResponse(HttpResponse response) throws
+            IOException {
         HttpEntity entity = response.getEntity();
         StatusLine statusLine = response.getStatusLine();
         boolean successfulResponse = (statusLine.getStatusCode() / 100) == 2;

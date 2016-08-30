@@ -73,8 +73,7 @@ public abstract class ApiTest<OperationType, ListenerType> extends Instrumentati
         final MockHttpClient currentMockClient = this.mockClient;
         MockHttpClient liveLibraryHeaderCheckerClient = new MockHttpClient() {
             @Override
-            public HttpResponse execute(HttpUriRequest request) throws IOException,
-                                                                       ClientProtocolException {
+            public HttpResponse execute(HttpUriRequest request) throws IOException {
                 Header header = request.getFirstHeader("X-HTTP-Live-Library");
 
                 assertEquals("android/" + Build.VERSION.RELEASE + "_5.0", header.getValue());

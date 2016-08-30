@@ -37,13 +37,13 @@ class ApiRequestAsync<ResponseType> extends AsyncTask<Void, Long, Runnable>
                                     implements UploadProgressListener {
 
     public interface Observer<ResponseType> {
-        public void onComplete(ResponseType result);
+        void onComplete(ResponseType result);
 
-        public void onError(LiveOperationException e);
+        void onError(LiveOperationException e);
     }
 
     public interface ProgressObserver {
-        public void onProgress(Long... values);
+        void onProgress(Long... values);
     }
 
     private class OnCompleteRunnable implements Runnable {

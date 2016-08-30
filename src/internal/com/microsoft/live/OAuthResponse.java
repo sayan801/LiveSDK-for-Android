@@ -36,6 +36,6 @@ interface OAuthResponse {
      *
      * @param visitor to visit the given OAuthResponse
      */
-    public void accept(OAuthResponseVisitor visitor);
+    void accept(OAuthResponseVisitor visitor);
 
 }

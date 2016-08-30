@@ -43,7 +43,7 @@ enum JsonResponseHandler implements ResponseHandler<JSONObject> {
 
     @Override
     public JSONObject handleResponse(HttpResponse response)
-            throws ClientProtocolException, IOException {
+            throws IOException {
         final HttpEntity entity = response.getEntity();
         final String stringResponse;
         if (entity != null) {
